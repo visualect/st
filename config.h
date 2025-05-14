@@ -5,7 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+// static char *font = "Misc Tamsyn:pixelsize=16:style=Regular";
+static char *font =
+    "JetBrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true";
 
 static int borderpx = 2;
 
@@ -218,6 +220,8 @@ static Shortcut shortcuts[] = {
     {TERMMOD, XK_Y, clippaste, {.i = 0}},
     {ShiftMask, XK_Insert, clippaste, {.i = 0}},
     {TERMMOD, XK_Num_Lock, numlock, {.i = 0}},
+    {ControlMask, XK_minus, zoom, {.f = -2}},
+    {ControlMask, XK_equal, zoom, {.f = +2}},
 };
 
 /*
